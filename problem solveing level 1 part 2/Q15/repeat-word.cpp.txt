@@ -1,0 +1,30 @@
+// Q15 - Repeat a word based on a number of times
+
+#include <iostream>
+using namespace std;
+
+// دالة بتكرر الكلمة بعدد معين
+string repeatWord(string word, int num) {
+    string results = "";
+    for (int i = 0; i < num; i++) {
+        results += word;
+    }
+    return results;
+}
+
+int main() {
+    int num;
+    string word;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    cout << "Enter a word: ";
+    cin >> word;
+
+    // استدعاء الدالة وطباعة النتيجة
+    string results = repeatWord(word, num);
+    cout << "Repeated word: " << results;
+
+    return 0;
+}

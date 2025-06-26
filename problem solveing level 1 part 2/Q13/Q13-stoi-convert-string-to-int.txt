@@ -1,0 +1,18 @@
+// Q15 - Convert a string number to integer using stoi()
+
+#include <iostream>
+#include <string> // ضرورية لاستخدام الدالة stoi
+using namespace std;
+
+int main() {
+    // تعريف متغير نصي (string) يحتوي على رقم
+    string numString = "124";
+
+    // تحويل النص إلى عدد صحيح باستخدام دالة stoi
+    int num = stoi(numString);
+
+    // طباعة الناتج بعد التحويل
+    cout << "The number after conversion is: " << num;
+
+    return 0;
+}
